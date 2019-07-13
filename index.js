@@ -47,6 +47,18 @@ const LETTERS = [
 ];
 
 const checkboxes = document.getElementsByTagName('input');
+const wrapper = document.getElementById('wrapper');
+let container = document.querySelector('.container');
+
+container.addEventListener('click', event => {
+  let target = event.target;
+
+  if (target.tagName != 'INPUT') return;
+
+  toggleCheckbox(target);
+
+});
+
 
 let set = new Set();
 
