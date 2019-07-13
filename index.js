@@ -48,7 +48,7 @@ const LETTERS = [
 
 const checkboxes = document.getElementsByTagName('input');
 const wrapper = document.getElementById('wrapper');
-let container = document.querySelector('.container');
+const container = document.querySelector('.container');
 
 container.addEventListener('click', event => {
   let target = event.target;
